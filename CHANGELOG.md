@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.17.2](https://github.com/Gitlawb/openclaude/compare/v0.17.1...v0.17.2) (2026-06-05)
+
+
+### Performance Improvements
+
+* **attachments:** skip skill listings for utility forks ([#1545](https://github.com/Gitlawb/openclaude/issues/1545)) ([2bed184](https://github.com/Gitlawb/openclaude/commit/2bed1849b1a587bda2970cb83f20b326f794aec0))
+
 ## [0.17.1](https://github.com/Gitlawb/openclaude/compare/v0.17.0...v0.17.1) (2026-06-05)
 
 
