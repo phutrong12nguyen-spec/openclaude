@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-laugh-beam"></i> Joke Generator</h1>
+            <p class="subtitle">Get a random laugh in seconds!</p>
+        </header>
+
+        <main>
+            <!-- Joke Display Card -->
+            <div class="joke-card">
+                <div class="joke-content" id="jokeContent">
+                    <p class="loading">Click the button to get a joke...</p>
+                </div>
+                <div class="joke-type" id="jokeType"></div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button id="getJokeBtn" class="btn btn-primary">
+                    <i class="fas fa-dice"></i> Get a Joke
+                </button>
+                <button id="copyBtn" class="btn btn-secondary" title="Copy to clipboard">
+                    <i class="fas fa-copy"></i> Copy
+                </button>
+                <button id="shareBtn" class="btn btn-secondary" title="Share joke">
+                    <i class="fas fa-share-alt"></i> Share
+                </button>
+            </div>
+
+            <!-- Filter Options -->
+            <div class="filters">
+                <h3>Filter by Type:</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="general">General</button>
+                    <button class="filter-btn" data-filter="programming">Programming</button>
+                    <button class="filter-btn" data-filter="knock-knock">Knock-Knock</button>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats">
+                <div class="stat-item">
+                    <h4>Jokes Viewed</h4>
+                    <p id="jokesViewed">0</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Favorites</h4>
+                    <p id="favoritesCount">0</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Shared</h4>
+                    <p id="sharesCount">0</p>
+                </div>
+            </div>
+
+            <!-- Favorites Section -->
+            <div class="favorites-section">
+                <h3>My Favorite Jokes</h3>
+                <div class="favorites-list" id="favoritesList">
+                    <p class="empty-message">No favorites yet. Click the heart to save jokes!</p>
+                </div>
+            </div>
+
+            <!-- Joke History -->
+            <div class="history-section">
+                <h3>Recent Jokes</h3>
+                <div class="history-list" id="historyList">
+                    <p class="empty-message">No history yet.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built with <i class="fas fa-heart"></i> | Using JokeAPI</p>
+            <a href="https://jokeapi.dev" target="_blank">JokeAPI Documentation</a>
+        </footer>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
