@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTX Computer - Laptop, PC, Linh kiện, Build PC - Chính hãng, Uy tín</title>
+    <meta name="description" content="CTX Computer - Mua Laptop, PC Gaming, Linh kiện máy tính, Build PC chuyên nghiệp. Hàng chính hãng, bảo hành, giao nhanh. Hotline: 1900 2266">
+    <link rel="stylesheet" href="premium-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Notification Bar -->
+    <div class="top-notification">
+        <div class="notification-content">
+            <i class="fas fa-truck-fast"></i>
+            <span>Miễn phí giao hàng đơn từ 3 triệu - Trả góp 0% lãi suất</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-left">
+                    <a href="tel:19002266"><i class="fas fa-phone"></i> Hotline: <strong>1900 2266</strong></a>
+                    <span class="divider">|</span>
+                    <a href="#"><i class="fas fa-map-location-dot"></i> Hệ thống showroom</a>
+                </div>
+                <div class="header-top-right">
+                    <a href="#"><i class="fas fa-user"></i> Tài khoản</a>
+                    <a href="#"><i class="fas fa-heart"></i> Yêu thích</a>
+                    <a href="#"><i class="fas fa-bell"></i> Thông báo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="header-grid">
+                    <!-- Logo -->
+                    <div class="logo-section">
+                        <a href="#" class="logo">
+                            <span class="logo-text">CTX Computer</span>
+                            <small>PC Solutions</small>
+                        </a>
+                    </div>
+
+                    <!-- Search Bar -->
+                    <div class="search-section">
+                        <form class="search-box" id="searchForm">
+                            <input type="text" id="searchInput" placeholder="Tìm laptop, PC, linh kiện, gaming gear..." autocomplete="off">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                        <div class="search-suggestions" id="searchSuggestions" style="display:none;"></div>
+                    </div>
+
+                    <!-- Header Actions -->
+                    <div class="header-actions">
+                        <a href="#flash-sale" class="action-btn highlight">
+                            <i class="fas fa-fire"></i>
+                            <span>Flash Sale</span>
+                        </a>
+                        <a href="#build-pc" class="action-btn">
+                            <i class="fas fa-wrench"></i>
+                            <span>Build PC</span>
+                        </a>
+                        <button class="action-btn cart-btn" id="cartToggle">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Giỏ hàng</span>
+                            <span class="cart-badge" id="cartBadge">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="header-nav">
+            <div class="container">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i> Danh mục
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#laptops-cat">Laptop</a></li>
+                    <li><a href="#pc-cat">PC Gaming & Workstation</a></li>
+                    <li><a href="#components-cat">Linh kiện</a></li>
+                    <li><a href="#monitors-cat">Màn hình</a></li>
+                    <li><a href="#gaming-cat">Gaming Gear</a></li>
+                    <li><a href="#accessories-cat">Phụ kiện</a></li>
+                    <li><a href="#about">Thông tin công ty</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-slider" id="heroSlider">
+            <div class="hero-slide" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <div class="hero-content">
+                    <h1>Công nghệ chiến game cấp độ cao</h1>
+                    <p>RTX 4090, Ryzen 9, RAM 128GB - Xây dựng PC siêu mạnh của riêng bạn</p>
+                    <a href="#build-pc" class="btn btn-primary">Build PC Ngay</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <div class="hero-content">
+                    <h1>Laptop Gaming 2024</h1>
+                    <p>Core i9, RTX 4090, Màn 240Hz - Giảm đến 25%</p>
+                    <a href="#laptops-cat" class="btn btn-primary">Khám phá</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <div class="hero-content">
+                    <h1>Khuyến mãi tuần này</h1>
+                    <p>Mua linh kiện giảm 30% - Trả góp 0% lãi suất</p>
+                    <a href="#flash-sale" class="btn btn-secondary">Xem ngay</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-dots" id="heroDots"></div>
+    </section>
+
+    <!-- Flash Sale Section -->
+    <section class="flash-sale-section" id="flash-sale">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="badge-hot">Flash Sale</span>
+                    <h2>Giảm giá lên tới 50%</h2>
+                </div>
+                <div class="countdown-timer">
+                    <span>Kết thúc trong: <strong id="countdown">02:45:30</strong></span>
+                </div>
+            </div>
+            <div class="product-grid" id="flashSaleGrid">
+                <!-- Products loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Showcase -->
+    <section class="category-showcase">
+        <div class="container">
+            <h2>Danh mục nổi bật</h2>
+            <div class="category-grid">
+                <a href="#laptops-cat" class="category-card">
+                    <i class="fas fa-laptop"></i>
+                    <span>Laptop</span>
+                    <small>2,500+ mẫu</small>
+                </a>
+                <a href="#pc-cat" class="category-card">
+                    <i class="fas fa-desktop"></i>
+                    <span>PC Gaming</span>
+                    <small>1,200+ cấu hình</small>
+                </a>
+                <a href="#components-cat" class="category-card">
+                    <i class="fas fa-microchip"></i>
+                    <span>Linh kiện</span>
+                    <small>5,000+ sản phẩm</small>
+                </a>
+                <a href="#monitors-cat" class="category-card">
+                    <i class="fas fa-tv"></i>
+                    <span>Màn hình</span>
+                    <small>800+ loại</small>
+                </a>
+                <a href="#gaming-cat" class="category-card">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Gaming Gear</span>
+                    <small>1,500+ sản phẩm</small>
+                </a>
+                <a href="#accessories-cat" class="category-card">
+                    <i class="fas fa-plug"></i>
+                    <span>Phụ kiện</span>
+                    <small>3,000+ mặt hàng</small>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Catalog Section -->
+    <section class="catalog-section" id="catalog">
+        <div class="container">
+            <div class="catalog-layout">
+                <!-- Sidebar Filters -->
+                <aside class="filter-sidebar" id="filterSidebar">
+                    <div class="filter-header">
+                        <h3>Bộ lọc</h3>
+                        <button class="filter-reset" id="filterReset">Xóa tất cả</button>
+                    </div>
+
+                    <!-- Price Filter -->
+                    <div class="filter-group">
+                        <h4>Khoảng giá</h4>
+                        <div class="price-range">
+                            <input type="number" id="priceMin" placeholder="Từ" class="price-input">
+                            <span>-</span>
+                            <input type="number" id="priceMax" placeholder="Đến" class="price-input">
+                            <button class="btn-filter" id="applyPrice">Áp dụng</button>
+                        </div>
+                        <div class="price-presets">
+                            <button class="preset-btn" data-price="0-5000000">Dưới 5tr</button>
+                            <button class="preset-btn" data-price="5000000-10000000">5-10tr</button>
+                            <button class="preset-btn" data-price="10000000-20000000">10-20tr</button>
+                            <button class="preset-btn" data-price="20000000-999999999">Trên 20tr</button>
+                        </div>
+                    </div>
+
+                    <!-- Brand Filter -->
+                    <div class="filter-group">
+                        <h4>Thương hiệu</h4>
+                        <div class="brand-list" id="brandFilter">
+                            <!-- Brands loaded via JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Category Filter -->
+                    <div class="filter-group">
+                        <h4>Loại sản phẩm</h4>
+                        <select id="categorySelect" class="filter-select">
+                            <option value="">Tất cả loại</option>
+                            <option value="Laptop">Laptop</option>
+                            <option value="PC Gaming">PC Gaming</option>
+                            <option value="Linh kiện">Linh kiện</option>
+                            <option value="Màn hình">Màn hình</option>
+                            <option value="Gaming Gear">Gaming Gear</option>
+                            <option value="Phụ kiện">Phụ kiện</option>
+                        </select>
+                    </div>
+
+                    <!-- RAM Filter -->
+                    <div class="filter-group">
+                        <h4>RAM (nếu có)</h4>
+                        <div class="checkbox-group" id="ramFilter">
+                            <!-- Checkboxes loaded via JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Storage Filter -->
+                    <div class="filter-group">
+                        <h4>Storage (nếu có)</h4>
+                        <div class="checkbox-group" id="storageFilter">
+                            <!-- Checkboxes loaded via JavaScript -->
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Product Area -->
+                <main class="product-section">
+                    <div class="product-toolbar">
+                        <div class="sort-controls">
+                            <span class="result-count">
+                                Hiển thị <strong id="resultCount">0</strong> sản phẩm
+                            </span>
+                            <select id="sortBy" class="sort-select">
+                                <option value="popular">Phổ biến nhất</option>
+                                <option value="newest">Mới nhất</option>
+                                <option value="price-asc">Giá thấp đến cao</option>
+                                <option value="price-desc">Giá cao đến thấp</option>
+                                <option value="discount">Giảm giá nhiều</option>
+                            </select>
+                        </div>
+
+                        <!-- View Options -->
+                        <div class="view-options">
+                            <button class="view-btn active" data-view="grid">
+                                <i class="fas fa-grip"></i>
+                            </button>
+                            <button class="view-btn" data-view="list">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Grid -->
+                    <div class="product-grid" id="productGrid">
+                        <!-- Products loaded via JavaScript -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination" id="pagination">
+                        <button class="page-btn" id="prevPage">&laquo; Trước</button>
+                        <div class="page-numbers" id="pageNumbers"></div>
+                        <button class="page-btn" id="nextPage">Tiếp &raquo;</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Build PC Section -->
+    <section class="build-pc-section" id="build-pc">
+        <div class="container">
+            <div class="build-header">
+                <h2>Xây dựng cấu hình PC của bạn</h2>
+                <p>Chọn từng linh kiện và kiểm tra độ tương thích</p>
+            </div>
+
+            <div class="build-layout">
+                <div class="build-config">
+                    <h3>Cấu hình của bạn</h3>
+                    <div class="config-parts" id="configParts">
+                        <!-- Build parts loaded via JavaScript -->
+                    </div>
+                </div>
+
+                <div class="build-summary">
+                    <h3>Tổng cộng</h3>
+                    <div class="summary-item">
+                        <span>Số lượng linh kiện:</span>
+                        <strong id="partCount">0</strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>Tổng tiền:</span>
+                        <strong id="buildTotal" class="price-highlight">0đ</strong>
+                    </div>
+                    <div class="compatibility-check" id="compatibilityCheck"></div>
+                    <button class="btn btn-primary" id="addBuildToCart">Thêm vào giỏ hàng</button>
+                    <button class="btn btn-secondary" id="saveBuild">Lưu cấu hình</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer" id="about">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <h4>CTX Computer</h4>
+                    <p>Cung cấp máy tính, linh kiện, gaming gear chính hãng với giá cạnh tranh.</p>
+                    <div class="footer-info">
+                        <p><strong>Địa chỉ:</strong> 18B Trần Tế Xương, Cao Lãnh, Đồng Tháp</p>
+                        <p><strong>Hotline:</strong> <a href="tel:19002266">1900 2266</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@ctxcomputer.vn">info@ctxcomputer.vn</a></p>
+                        <p><strong>Giờ làm việc:</strong> 8:00 - 20:00 (Thứ 2 - Thứ 7)</p>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-section">
+                    <h4>Danh mục</h4>
+                    <ul>
+                        <li><a href="#laptops-cat">Laptop</a></li>
+                        <li><a href="#pc-cat">PC Gaming</a></li>
+                        <li><a href="#components-cat">Linh kiện</a></li>
+                        <li><a href="#monitors-cat">Màn hình</a></li>
+                        <li><a href="#gaming-cat">Gaming Gear</a></li>
+                        <li><a href="#accessories-cat">Phụ kiện</a></li>
+                    </ul>
+                </div>
+
+                <!-- Policies -->
+                <div class="footer-section">
+                    <h4>Chính sách</h4>
+                    <ul>
+                        <li><a href="#warranty">Bảo hành và đổi trả</a></li>
+                        <li><a href="#shipping">Giao hàng và thanh toán</a></li>
+                        <li><a href="#installment">Hướng dẫn trả góp</a></li>
+                        <li><a href="#privacy">Chính sách bảo mật</a></li>
+                        <li><a href="#terms">Điều khoản sử dụng</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social & Newsletter -->
+                <div class="footer-section">
+                    <h4>Kết nối với chúng tôi</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com/ctxcomputer" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com/@ctxcomputer" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://zalo.me/ctxcomputer" target="_blank" title="Zalo">
+                            <i class="fab fa-phone"></i>
+                        </a>
+                        <a href="https://tiktok.com/@ctxcomputer" target="_blank" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                    <h4 style="margin-top: 20px;">Nhận tin khuyến mãi</h4>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Email của bạn" required>
+                        <button type="submit" class="btn btn-secondary">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 CTX Computer. Tất cả quyền được bảo lưu.</p>
+                <div class="payment-methods">
+                    <i class="fas fa-credit-card"></i> Trả góp 0%
+                    <i class="fas fa-wallet"></i> COD
+                    <i class="fas fa-university"></i> Chuyển khoản
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Giỏ hàng</h3>
+            <button class="close-btn" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-message">Giỏ hàng trống</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Tổng cộng:</span>
+                <strong id="cartTotalPrice">0đ</strong>
+            </div>
+            <button class="btn btn-primary full-width" id="checkoutBtn">Thanh toán</button>
+            <button class="btn btn-secondary full-width" id="continueShopping">Tiếp tục mua sắm</button>
+        </div>
+    </aside>
+
+    <!-- Cart Overlay -->
+    <div class="overlay" id="cartOverlay"></div>
+
+    <script src="premium-app.js"></script>
+</body>
+</html>
